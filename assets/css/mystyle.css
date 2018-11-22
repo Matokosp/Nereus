@@ -12,11 +12,14 @@ h1, h2 {
 	margin:0;
 }
 
-.header {
-	background-image: url(../images/bkg-1.jpg);
+.background__image-cons {
 	background-position: center center;
 	background-size: cover;
 	text-align: center;
+}
+
+.header {
+	background-image: url(../images/bkg-1.jpg);
 	height: 700px;
 }
 
@@ -46,11 +49,8 @@ h1, h2 {
 
 .brief__section {
 	background-image: url(../images/bkg-2.jpg);
-	background-position: center center;
-	background-size: cover;
-	text-align: center;
 	height: 700px;
-	padding: 0 10vw;
+	padding: 0 12vw;
 }
 
 .brief__section h1 {
@@ -79,10 +79,31 @@ h1, h2 {
 	margin: 20px auto 0 auto;
 }
 
-.brief__bottom {
+.brief__section-bottom {
 	background-image: url(../images/bkg-3.jpg);
-	background-position: center center;
-	background-size: cover;
-	text-align: center;
-	height: 100px;
+	height: 80px;
+}
+
+.ciclo__section {
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+.ciclo__section img {
+	width: 100%;
+}
+
+.statistics__section {
+	background-image: url(../images/bkg-4.jpg);
+	height: 350px;
+}
+
+.marcas__section {
+	background-image: url(../images/bkg-5.jpg);
+	height: 660px;
+}
+
+.marcas__section-bottom {
+	background-image: url(../images/bkg-6.jpg);
+	height: 80px;
 }
