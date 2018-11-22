@@ -96,12 +96,93 @@ h1, h2 {
 .statistics__section {
 	background-image: url(../images/bkg-4.jpg);
 	height: 350px;
+	padding: 30px 5vw 0 5vw;
+}
+
+.statistics__section h2 {
+	color: #60605d;
+	font-size: 2.5em;
+	display: inline-block;
+	width: 40%;
+	margin-bottom: 10px;
+}
+
+.statistics__section p {
+	color: #60605d;
+	font-size: 1.4em;
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+	margin-top: 10px;
+}
+
+
+.statistics__section img {
+	width: 100%;
 }
 
 .marcas__section {
 	background-image: url(../images/bkg-5.jpg);
 	height: 660px;
 }
+
+.socios {
+	padding-top: 30px;
+}
+
+.marcas__titles {
+	font-weight: 500;
+	color: #fff;
+	font-size: 2em;
+}
+
+.title__underline {
+	width: 150px;
+	height: 4px;
+	border-radius: 50px;
+	background-color: #fff;
+	margin: 3px auto 0 auto;
+}
+
+.socios__imgs {
+	padding-top: 30px;
+}
+
+.socios__marca-icon {
+	display: block;
+	margin: 0 auto;
+	width: 270px;
+	margin-top: 15px;
+}
+
+.socios__marca-icon--circular {
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	margin-top: 15px;
+}
+
+.certificados {
+	margin-top: 50px;
+}
+
+.certificacion__icons-section {
+	margin-top: 30px;
+}
+
+.certificacion__icon {
+	display: inline-block;
+	width: 70px;
+	margin:0 10px;
+}
+
+.certificacion__icon--break {
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	margin-top: 10px;
+}
+
 
 .marcas__section-bottom {
 	background-image: url(../images/bkg-6.jpg);
