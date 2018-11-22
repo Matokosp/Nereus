@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+}
+
+h1, h2 {
+	font-family: 'Fira Sans', sans-serif;
+	margin:0;
+}
+
+.header {
+	background-image: url(../images/bkg-1.jpg);
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	height: 700px;
+}
+
+.header__logo {
+	display: block;
+	margin:0 auto;
+	width: 80%;
+	padding-top: 300px;
+}
+
+.header__category {
+	display: inline-block;
+}
+
+.header__category p {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 0.9em;
+}
+
+.header__icon {
+	display: inline-block;
+	width: 70px;
+	margin: 30px 20px 0 20px;
+}
+
+.brief__section {
+	background-image: url(../images/bkg-2.jpg);
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	height: 700px;
+	padding: 0 10vw;
+}
+
+.brief__section h1 {
+	padding-top: 270px;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: left;
+	display: block;
+	margin: 0 auto;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+
+.brief__section p {
+	color: #fff;
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+
+.brief__line {
+	width: 130px;
+	height: 4px;
+	border-radius: 50px;
+	background-color: #fff;
+	margin: 20px auto 0 auto;
+}
+
+.brief__bottom {
+	background-image: url(../images/bkg-3.jpg);
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+	height: 100px;
+}
