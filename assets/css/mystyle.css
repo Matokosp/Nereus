@@ -188,3 +188,59 @@ h1, h2 {
 	background-image: url(../images/bkg-6.jpg);
 	height: 80px;
 }
+
+.category__section {
+	margin-top: 30px;
+	padding: 0 10vw;
+}
+
+.categoria__header {
+	text-align: center;
+	padding: 0 15vw;
+}
+
+.categoria__header img {
+	width: 100%;
+}
+
+.categoria__header p {
+	font-size: 1.2em;
+	text-align: left;
+}
+
+.product__flexslider {
+	margin-top: 40px;
+}
+
+.product__slide {
+	text-align: center;
+}
+
+.product__slide h3 {
+	font-size: 2.3em;
+	padding-bottom: 4px;
+	border-bottom: 3px solid #3e6f8c;
+	width: 90px;
+	margin: 0 auto;
+	color: #434041;
+}
+
+.product__slide p {
+	font-size: 1.3em;
+	margin-bottom: 8px;
+}
+
+.product__ficha {
+	text-transform: uppercase;
+	background-color: #3e6f8c;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 50px;
+	font-weight: 900;
+	color: #fff;
+}
+
+.bottom__section  {
+	background-image: url(../images/bkg-7.jpg);
+	height: 700px;
+}

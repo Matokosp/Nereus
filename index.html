@@ -9,6 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:500,600,700|Ubuntu:300,500" rel="stylesheet">
+
+    <!-- FLEXSLIDER CSS -->
+	<link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen" />
+
     <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -75,10 +79,49 @@
 		</div>
 	</section>
 	<div class="background__image-cons marcas__section-bottom"></div>
+	<section class="category__section">
+		<div class="categoria__header">
+			<img src="assets/images/nereus-agua-icon.png">
+			<p>Estos productos corresponden a la medición del ciclo de agua en todas sus etapas, permitiendo precisión del conocimiento de agua y anticipar el uso correcto de&nbsp;ésta.</p>
+		</div>
+	    <div class="flexslider product__flexslider">
+          <ul class="slides">
+            <li class="product__slide">
+              <h3>R800</h3>
+              <img src="assets/images/product-test.jpg"/>
+              <p>Producto1 C. 12345</p>
+              <button class="product__ficha">ver ficha</button>
+            </li>
+            <li>
+              <img src="assets/images/product-test.jpg"/>
+            </li>
+            <li>
+              <img src="assets/images/product-test.jpg"/>
+            </li>
+            <li>
+              <img src="assets/images/product-test.jpg"/>
+            </li>
+          </ul>
+        </div>
+	</section>
+	<section class="bottom__section background__image-cons"></section>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="assets/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
