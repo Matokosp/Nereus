@@ -244,3 +244,26 @@ h1, h2 {
 	background-image: url(../images/bkg-7.jpg);
 	height: 700px;
 }
+
+.bottom__section h2 {
+	text-align: left;
+	font-size: 2.5em;
+	color: #fff;
+	padding: 280px 12vw;
+}
+
+.nereus__footer {
+	background-color: #3a3636;
+	padding: 10px 8vw;
+}
+
+.nereus__footer img {
+	width: 100px;
+}
+
+.nereus__footer i {
+	float: right;
+	padding-left: 10px;
+	color: #fff;
+	font-size: 2.8em;
+}
