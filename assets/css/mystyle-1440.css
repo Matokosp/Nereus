@@ -7,37 +7,140 @@
 	height: 1070px;
 }
 
+.header__logo {
+	width: 30%;
+	padding-top: 350px;
+}
+
+.header__category p {
+	font-size: 1.7em;
+}
+
+.header__icon {
+	width: 100px;
+	margin: 30px 40px 0 40px;
+}
+
 .brief__section {
 	background-image: url(../images/bkg-2-1000.jpg);
-	height: 815px;
+	height: 814px;
 	padding: 0 35vw;
+}
+
+.brief__section h1 {
+	padding-top: 210px;
+	font-size: 3em;
+}
+
+.brief__section p {
+	font-size: 1.4em;
+	line-height: 1.5em;
 }
 
 .brief__section-bottom {
 	background-image: url(../images/bkg-3-1440.jpg);
-	height: 101px;
+	height: 125px;
+}
+
+.ciclo__section {
+	padding: 0 25vw;
+	margin-bottom: 80px;
 }
 
 .statistics__section {
 	background-image: url(../images/bkg-4-1440.jpg);
-	height: 310px;
+	height: 420px;
 	padding: 0 14vw;
+}
+
+.statistics__section h2 {
+	font-size: 3.2em;
+}
+
+.statistics__section p {
+	font-size: 1.7em;
+	padding: 0 20px;
+}
+
+.statistics__section-firstrow {
+	padding-top: 120px;
+	display: inline-block;
+	width: 49%;
+	position: relative;
+	right: -20px;
+}
+
+.statistics__section-secondrow {
+	padding-top: 120px;
+	display: inline-block;
+	width: 49%;
+	position: relative;
+	left: -20px;
 }
 
 .marcas__section {
 	background-image: url(../images/bkg-5-1440.jpg);
-	height: 656px;
+	height: 890px;
+}
+
+.socios {
+	padding-top: 180px;
+	margin-right: 80px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.socios__marca-icon {
+	width: 360px;
+}
+
+.socios__marca-icon--circular {
+	width: 110px;
+}
+
+.certificados {
+	margin-top: 180px;
+	display: inline-block;
+	margin-left: 80px;
+}
+
+.certificacion__icon {
+	display: inline-block;
+	width: 120px;
+	margin: 10px 30px;
+}
+
+.certificacion__icon--break {
+	display: block;
+	margin: 0 auto;
+	width: 130px;
+	margin-top: 30px;
 }
 
 .marcas__section-bottom {
 	background-image: url(../images/bkg-6-1440.jpg);
-	height: 155px;
+	height: 200px;
+}
+
+.categoria__header {
+	padding: 0 20vw;
+}
+
+.categoria__header p {
+	font-size: 1.6em;
 }
 
 .bottom__section  {
 	background-image: url(../images/bkg-7-1440.jpg);
-	height: 720px;
+	height: 970px;
 	margin-top: 120px;
+}
+
+.bottom__section h2 {
+	text-align: left;
+	font-size: 3.5em;
+	color: #fff;
+	padding: 410px 35vw 0 35vw;
 }
 
 }
