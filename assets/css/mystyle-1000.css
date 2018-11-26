@@ -1,0 +1,38 @@
+@charset "UTF-8"; 
+
+@media (min-width: 950px) {
+
+.header {
+	background-image: url(../images/bkg-1-1000.jpg);
+	height: 820px;
+}
+
+.header__logo {
+	width: 35%;
+	padding-top: 280px;
+}
+
+.header__category p {
+	font-size: 1.3em;
+}
+
+.header__icon {
+	width: 90px;
+}
+
+.brief__section {
+	background-image: url(../images/bkg-2-1000.jpg);
+	height: 580px;
+	padding: 0 35vw;
+}
+
+.brief__section h1 {
+	padding-top: 140px;
+}
+
+.brief__section-bottom {
+	background-image: url(../images/bkg-3-1000.jpg);
+	height: 101px;
+}
+
+}

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+
+.header {
+	background-image: url(../images/bkg-1-768.jpg);
+	height: 600px;
+}
+
+.header__logo {
+	width: 40%;
+	padding-top: 200px;
+}
+
+.header__category p {
+	font-size: 1em;
+}
+
+.header__icon {
+	width: 60px;
+}
+
+.brief__section {
+	background-image: url(../images/bkg-2-768.jpg);
+	height: 370px;
+	padding: 0 30vw;
+}
+
+.brief__section h1 {
+	padding-top: 20px;
+}
+
+.brief__section-bottom {
+	background-image: url(../images/bkg-3-768.jpg);
+	height: 60px;
+}
+
+.ciclo__section {
+	padding: 0 15vw;
+	margin-bottom: 40px;
+}
+
+.statistics__section {
+	background-image: url(../images/bkg-4-768.jpg);
+	height: 200px;
+	padding: 0 5vw;
+}
+
+.statistics__section-firstrow {
+	padding-top: 20px;
+	display: inline-block;
+	width: 49%;
+	position: relative;
+	right: -8px;
+}
+
+.statistics__section-secondrow {
+	padding-top: 20px;
+	display: inline-block;
+	width: 49%;
+}
+
+.marcas__section {
+	background-image: url(../images/bkg-5-768.jpg);
+	height: 400px;
+}
+
+.socios {
+	padding-top: 60px;
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.socios__marca-icon {
+	width: 240px;
+}
+
+.socios__marca-icon--circular {
+	width: 70px;
+}
+
+.certificados {
+	margin-top: 60px;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.certificacion__icon {
+	display: inline-block;
+	width: 80px;
+	margin:0 20px;
+}
+
+.certificacion__icon--break {
+	display: block;
+	margin: 0 auto;
+	width: 90px;
+	margin-top: 30px;
+}
+
+.marcas__section-bottom {
+	background-image: url(../images/bkg-6-768.jpg);
+	height: 110px;
+}
+
+.bottom__section  {
+	background-image: url(../images/bkg-7-768.jpg);
+	height: 450px;
+	margin-top: 120px;
+}
+
+.bottom__section h2 {
+	text-align: left;
+	font-size: 2.5em;
+	color: #fff;
+	padding: 200px 20vw 0 20vw;
+}
+
+}
