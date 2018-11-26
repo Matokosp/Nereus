@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+.main-nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background: none;
+    z-index: 10;
+}
+
+#menu{
+    display: none;
+}
+
+.hamburger {
+	position: absolute;
+	display: block;
+    right: 30px;
+    top: 30px;
+}
+
+#menuicon {
+	width: 30px;
+	-webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+#menuicon.rotated {
+    width: 40px;
+    -webkit-transform : rotate(-135deg); 
+    -moz-transform : rotate(-135deg); 
+    -ms-transform : rotate(-135deg); 
+    -o-transform : rotate(-135deg); 
+    transform : rotate(-135deg); 
+}
+
+.menu-hide{
+  width: 200px;
+  right: -205px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  transition: all .6s ease-in-out;
+  text-align: center;
+  
+  
+}/*end of menu-hide*/
+.menu-hide.show{
+  right: 0px;
+  background-color: #343333;
+  transition: all .6s ease-in-out;
+}
+
+
+.menures {
+	text-align: center;
+	margin-top: 70px;
+
+}
+
+.menures li {
+color: white;
+margin-bottom: 30px;
+}
+
+/*.menures a:hover {
+	font-size: 100px;
+}*/
+
+
+.logakchi {
+	width: 170px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.fa-instagram {
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+
+.footer {
+  display: block;
+  z-index: 99;
+  bottom: 0px;
+  height: 60px;
+  width: 100%;
+  background-color: #343333;
+  text-align: center;
+  padding: 5px 0 0 0;
+}
+
+.barrafooter {
+  display: inline-block;
+
+}
+
+.footer p{
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.footer h4 {
+  font-size: 0.9em;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+
+.nav-menu-res {
+  display: none;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin: 0;
+  padding: 0 120px 0 120px;
+}
+
+#menu li {
+  font-weight: 400;
+}
+
+#menu a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+#menu a:hover{
+  border-bottom: 3px solid #fff;
+  transition: .3s;
+}
+
+#menu a:hover::after {
+ height: 100%;
+}
+
+.menuactive {
+ font-weight: 900;
+}
+
+.menu-fullwidth {
+  background-color: #333333;
+  height: 50px;
+  text-align: center;
+  padding-top: 12px;
+  z-index: 99;
+}
+
+}
+
+
+@media (min-width: 1440px) {
+
+
+#menu {
+  padding: 0 20vw 0 20vw;
+}
+
+
+
+}
