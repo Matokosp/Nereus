@@ -1,0 +1,43 @@
+@charset "UTF-8"; 
+
+@media (min-width: 1440px) {
+
+.header {
+	background-image: url(../images/bkg-1-1000.jpg);
+	height: 1070px;
+}
+
+.brief__section {
+	background-image: url(../images/bkg-2-1000.jpg);
+	height: 815px;
+	padding: 0 35vw;
+}
+
+.brief__section-bottom {
+	background-image: url(../images/bkg-3-1440.jpg);
+	height: 101px;
+}
+
+.statistics__section {
+	background-image: url(../images/bkg-4-1440.jpg);
+	height: 310px;
+	padding: 0 14vw;
+}
+
+.marcas__section {
+	background-image: url(../images/bkg-5-1440.jpg);
+	height: 656px;
+}
+
+.marcas__section-bottom {
+	background-image: url(../images/bkg-6-1440.jpg);
+	height: 155px;
+}
+
+.bottom__section  {
+	background-image: url(../images/bkg-7-1440.jpg);
+	height: 720px;
+	margin-top: 120px;
+}
+
+}
