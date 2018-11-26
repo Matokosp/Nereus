@@ -35,4 +35,34 @@
 	height: 101px;
 }
 
+.ciclo__section {
+	padding: 0 20vw;
+	margin-bottom: 80px;
+}
+
+.statistics__section {
+	background-image: url(../images/bkg-4-1000.jpg);
+	height: 310px;
+	padding: 0 10vw;
+}
+
+.statistics__section-firstrow {
+	padding-top: 70px;
+	display: inline-block;
+	width: 49%;
+	position: relative;
+	right: -11px;
+}
+
+.statistics__section-secondrow {
+	padding-top: 70px;
+	display: inline-block;
+	width: 49%;
+}
+
+.marcas__section {
+	background-image: url(../images/bkg-5-1000.jpg);
+	height: 656px;
+}
+
 }
