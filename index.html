@@ -26,32 +26,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<nav class="main-nav">
-		<div class="nav-menu-res">
-			<div class="menu-hide">
-				<a href="index.html"><img class="logakchi" src="images/akbarlogoclean.png"></a>
-			    <ul class="menures">
-			        <li><a href="conocenos.html"><h4>CONÓCENOS</h4></a></li>
-			        <li><a href="nuestrote.html"><h4>NUESTRO TÉ</h4></a></li>
-			        <li><a href="donde.html"><h4>DÓNDE ESTAMOS</h4></a></li>
-			        <li><a target="_blank" href="https://drive.google.com/file/d/1V0xJmXYTVEycltuJzPXKV3s37z9S57MW/view?usp=sharing"><h4>VER CATÁLOGO</h4></a></li>
-			        <li><a href="https://www.instagram.com/akbar_chile_emporio/"><i class="fab fa-instagram"></i></a></li>
-			    </ul>
-			</div>
-			<div class="hamburger">
-			   <img id="menuicon" src="images/menuicon.svg">
-			</div>
-		</div>
-		<section class="menu-fullwidth">
-			<ul id="menu">    
-			    <li ><a class="menuactive" href="index.html">HOME</a></li>
-			    <li ><a href="conocenos.html">CONÓCENOS</a></li>
-			    <li ><a href="nuestrote.html">NUESTRO TÉ</a></li>
-			    <li ><a href="donde.html">DÓNDE ESTAMOS</a></li>
-			    <li ><a target="_blank" href="https://drive.google.com/file/d/1V0xJmXYTVEycltuJzPXKV3s37z9S57MW/view?usp=sharing">VER CATÁLOGO</a></li>
-			</ul>
-		</section>
-	</nav>
+
 	<header class="background__image-cons header">
 		<img class="header__logo" src="assets/images/nereus-icon.png">
 		<div class="header__category">
@@ -67,7 +42,37 @@
 			<p>Industrial</p>			
 		</div>
 	</header>
-	<section class="background__image-cons brief__section">
+	<nav class="main-nav">
+		<div class="nav-menu-res">
+	    	<div class="menu-hide" id="menu-hide">
+		        <a href="index.html">
+		          <img class="logozooma" src="images/logo-zooma.png">
+		        </a>
+		        <ul class="menures">
+		            <li><a href="#nosotros"><h4>nosotros</h4></a></li>        
+		            <li><a href="#partners"><h4>partners</h4></a></li>
+		            <li><a href="#medidores_agua"><h4>medidores de agua</h4></a></li>
+		            <li><a href="LINKEDIN" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
+		            <li><a href="TWITTER" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
+		        </ul>
+	    	</div>
+		    <div class="hamburger_div" id="hamburger">
+	       		<div class="menuicon"></div>
+	       		<div class="menuicon" id="menuicon-middle"></div>
+	       		<div class="menuicon"></div>
+	    	</div>
+		</div>
+		<section class="menu-fullwidth">
+			<ul id="menu">    
+	    		<li><a href="#nosotros"><h4>nosotros</h4></a></li>        
+	    		<li><a href="#partners"><h4>partners</h4></a></li>
+	    		<li><a href="#medidores_agua"><h4>medidores de agua</h4></a></li>
+	    		<li><a href="LINKEDIN" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
+	    		<li><a href="TWITTER" target="_blank"> <i class="fab fa-instagram"></i> </a></li>
+			</ul>
+		</section>
+	</nav>
+	<section class="background__image-cons brief__section" id="nosotros">
 		<h1>responsabilidad <br> con tus clientes y <br> el&nbsp;medioambiente</h1>
 		<p>NEREUS es una empresa innovadora que se posiciona como el nexo entre empresas sanitarias y sus clientes. Surge a partir de la necesidad deentregar con transparencia  el consumo de agua potable y aguas servidas de todos los clientes, sean éstos industriales, comerciales, públicos o&nbsp;particulares.</p>	
 		<div class="brief__line"></div>
@@ -92,7 +97,7 @@
 			<p>Litros de agua desperdiciados diariamente</p>
 		</div>
 	</section>
-	<section class="background__image-cons marcas__section">
+	<section class="background__image-cons marcas__section" id="partners">
 		<div class="socios">
 			<h2 class="marcas__titles">Nuestros Socios</h2>
 			<div class="title__underline"></div>
@@ -113,7 +118,7 @@
 		</div>
 	</section>
 	<div class="background__image-cons marcas__section-bottom"></div>
-	<section class="category__section">
+	<section class="category__section" id="medidores_agua">
 		<div class="categoria__header">
 			<img src="assets/images/nereus-agua-icon.png">
 			<p>Estos productos corresponden a la medición del ciclo de agua en todas sus etapas, permitiendo precisión del conocimiento de agua y anticipar el uso correcto de&nbsp;ésta.</p>
@@ -168,5 +173,6 @@
       });
     });
   </script>
+  <script type="text/javascript" src="assets/js/myscript.js"></script>
 </body>
 </html>
