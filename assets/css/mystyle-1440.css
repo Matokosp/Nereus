@@ -50,7 +50,7 @@
 .statistics__section {
 	background-image: url(../images/bkg-4-1440.jpg);
 	height: 420px;
-	padding: 0 5vw;
+	padding: 0 2vw;
 }
 
 .statistics__section-block p {
@@ -61,8 +61,13 @@
 	margin: 0 40px;
 }
 
+.country_item {
+	display: inline-block;
+	margin: 0 30px;
+}
+
 .country_item h2 {
-	font-size: 2.7em;
+	font-size: 3.2em;
 }
 
 .country_item h4 {

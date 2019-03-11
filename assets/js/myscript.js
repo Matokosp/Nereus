@@ -1,68 +1,107 @@
-// var checker = true;
-// var boton1 = document.getElementById("menuicon");
-// var boton2 = document.getElementById("hamburger");
+// MENU
+
+	// Sticky
+
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+	    navbar.classList.add("sticky")
+	  } else {
+	    navbar.classList.remove("sticky");
+	  }
+	}
 
 
+// Menu Slide
 
-// function desplazar(){
-//     targetLeft = checker ? "158px" : "20px";
-//     targetRight = checker ? "130px" : "20px";
-//     targetMiddle = checker ? "148px" : "20px";
-//     $("#hamburger").animate({left: targetLeft},400);   
-//     $('.menu-hide').toggleClass('show');
-//     checker ? (checker = false) : (checker = true);
-// }
-
-
-
-//   $(".nav-menu-res").click(function () {
-//   $(document).ready(function(){
-//   desplazar();
-// });
-// });
-
-
-
-//     $(document).ready(function(){
-//     window.addEventListener('click', function(e){
-//       var menu= document.getElementsByClassName("menu-hide show");
-//    if (e.target.className != "menu-hide show" && checker===false && e.target!= boton1 && e.target != boton2) {
-//         desplazar(); 
-
-//      }
-
-//     })
-// })
-	
 	var menuHideShow = $('.nav-menu-res').children(".menu-hide").hasClass('show');
 
 	function desplazar (){
 		$('.menu-hide').toggleClass('show');
 		$('#hamburger').toggleClass('hamburguer-slide');
-		$('#menuicon-middle').toggleClass('menuicon-pequeno');
 	}
-
-	function esconder (e){		
-		$('.menu-hide').removeClass('show');
-		$('#hamburger').removeClass('hamburguer-slide');
-		$('#menuicon-middle').removeClass('menuicon-pequeno');
-	}
-
 	$('#hamburger').on('click', function(e){		
 		desplazar();
 		e.stopPropagation();
 		menuHideShow = $('.nav-menu-res').children(".menu-hide").hasClass('show');
+		$('.menuicon').toggleClass('menuicon--black');
 		console.log(menuHideShow)
 	})
-	
    
 	window.addEventListener('click', function(e){
 		// var menuHide = $('.menu-hide');
 		if (menuHideShow === true && e.target.className != 'menu-hide show') {
-			desplazar();			
-		}		
+			$('.menu-hide').removeClass('show');
+			$('#hamburger').removeClass('hamburguer-slide');
+			// desplazar();
+			e.stopPropagation();		
+		}
 		console.log(e.target)
 	})
 
-	
 
+// MENU COLOR CHANGE
+
+	var sectionOne = $('.brief__section-bottom').offset();
+	var sectionTwo = $('.socios').offset();
+	var sectionThree = $('.marcas__section-bottom').offset();
+	var section4 = $('.bottom__section').offset();
+
+	const sm = window.matchMedia( "(max-width: 992px)" );
+	const md = window.matchMedia( "(min-width: 992px)" );
+
+	if (sm.matches) {
+		$(window).scroll(function(){
+
+			if ($(window).scrollTop() >= sectionOne.top ) {
+				$('.menuicon').addClass('menuicon--black');
+			} else {
+				$('.menuicon').removeClass('menuicon--black');
+			}
+
+			if ($(window).scrollTop() >= sectionTwo.top) {
+				$('.menuicon').removeClass('menuicon--black');
+			}
+
+			if ($(window).scrollTop() >= sectionThree.top) {
+				$('.menuicon').addClass('menuicon--black');
+			}
+
+			// if ($(window).scrollTop() >= section4.top) {
+			// 	$('.menuicon').removeClass('menuicon--black');
+			// }
+
+		})
+	}
+
+	if (md.matches) {
+		$(window).scroll(function() {
+
+			if($(window).scrollTop() + 200 >= sectionOne.top) {
+				$('.menu__full-list-link').addClass('menu__full-list-link-black');
+				$('.menu__full-list-img-white').css('display', 'none');
+				$('.menu__full-list-img-black').css('display', 'inline');
+			} else {
+				$('.menu__full-list-link').removeClass('menu__full-list-link-black');
+				$('.menu__full-list-img-white').css('display', 'inline');
+				$('.menu__full-list-img-black').css('display', 'none');
+			}
+
+			if ( $(window).scrollTop() >= sectionTwo.top ) {
+				$('.menu__full-list-link').removeClass('menu__full-list-link-black');
+				$('.menu__full-list-img-white').css('display', 'inline');
+				$('.menu__full-list-img-black').css('display', 'none');
+			}
+
+			if ( $(window).scrollTop() >= sectionThree.top ) {
+				$('.menu__full-list-link').addClass('menu__full-list-link-black');
+				$('.menu__full-list-img-white').css('display', 'none');
+				$('.menu__full-list-img-black').css('display', 'inline');
+			}
+
+		})
+	}
