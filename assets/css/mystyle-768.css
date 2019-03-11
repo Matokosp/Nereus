@@ -46,18 +46,25 @@
 	padding: 0 5vw;
 }
 
-.statistics__section-firstrow {
-	padding-top: 20px;
+.statistics__section-block {
 	display: inline-block;
-	width: 49%;
-	position: relative;
-	right: -8px;
+	vertical-align: middle;
+	margin: 0;
 }
 
-.statistics__section-secondrow {
-	padding-top: 20px;
+.statistics__section-block-separation {
 	display: inline-block;
-	width: 49%;
+	background-color: #60605d;
+	height: 50%;
+	width: 2px;
+	border-radius: 50px;
+	margin: 0 20px;
+	vertical-align: middle;
+}
+
+.country_item {
+	display: inline-block;
+	margin: 0 10px;
 }
 
 .marcas__section {

@@ -100,27 +100,41 @@ h1, h2 {
 	padding: 30px 5vw 0 5vw;
 }
 
-.statistics__section h2 {
-	color: #60605d;
-	font-size: 2.5em;
-	display: inline-block;
-	width: 40%;
-	margin-bottom: 10px;
+.statistics__section-block {
+	margin-bottom: 40px;
 }
 
-.statistics__section p {
+.statistics__section-block-separation {
+	display: none;
+}
+
+.statistics__section-block p {
+	color: #60605d;
+}
+
+.country_item {
+	display: inline-block;
+	margin: 0 2%;
+}
+
+.country_item h2 {
+	color: #60605d;
+	font-size: 1.8em;
+}
+
+.country_item h4 {
+	color: #60605d;
+}
+
+/*.country_item p {
 	color: #60605d;
 	font-size: 1.4em;
 	display: inline-block;
 	width: 40%;
 	vertical-align: top;
 	margin-top: 10px;
-}
+}*/
 
-
-.statistics__section img {
-	width: 100%;
-}
 
 .marcas__section {
 	background-image: url(../images/bkg-5.jpg);
