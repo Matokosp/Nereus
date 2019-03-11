@@ -77,21 +77,22 @@
 		<div class="brief__line"></div>
 	</section>
 	<div class="background__image-cons brief__section-bottom"></div>
+	<div id="statics"></div>
 	<section class="ciclo__section">
 		<img src="assets/images/ciclo-img.jpg">
 	</section>
 	<section class="background__image-cons statistics__section">
 		<div class="statistics__section-block">
 			<div class="country_item">
-				<h2>120 LT</h2>
+				<h2><span class="count" data-count="120">0</span> LT</h2>
 				<h4>Alemania</h4>
 			</div>
 			<div class="country_item">
-				<h2>200 LT</h2>
+				<h2><span class="count" data-count="200">0</span> LT</h2>
 				<h4>Chile</h4>
 			</div>
 			<div class="country_item">
-				<h2>300 LT</h2>
+				<h2><span class="count" data-count="300">0</span> LT</h2>
 				<h4>USA</h4>
 			</div>
 			<p>Promedio consumo de agua por día y persona</p>
@@ -99,23 +100,23 @@
 		<div class="statistics__section-block-separation"></div>
 		<div class="statistics__section-block">
 			<div class="country_item">
-				<h2>6 %</h2>
+				<h2><span class="count" data-count="6">0</span> %</h2>
 				<h4>Japón</h4>
 			</div>
 			<div class="country_item">
-				<h2>10 %</h2>
+				<h2><span class="count" data-count="10">0</span> %</h2>
 				<h4>Alemania</h4>
 			</div>
 			<div class="country_item">
-				<h2>15 %</h2>
+				<h2><span class="count" data-count="15">0</span> %</h2>
 				<h4>Australia</h4>
 			</div>
 			<div class="country_item">
-				<h2>35 %</h2>
+				<h2><span class="count" data-count="35">0</span> %</h2>
 				<h4>Chile</h4>
 			</div>
 			<div class="country_item">
-				<h2>40 %</h2>
+				<h2><span class="count" data-count="40">0</span> %</h2>
 				<h4>Brasil</h4>
 			</div>
 			<p>% de nivel de pérdida de agua en las redes</p>
@@ -196,6 +197,53 @@
         }
       });
     });
+  </script>
+
+  <!-- COUNTER -->
+  <script type="text/javascript">
+
+  	var statics = $('#statics').offset();
+  	const mq = window.matchMedia( "(min-width: 1000px)" );
+  	if (mq.matches) {
+  		$(window).scroll(function(){
+  		// 	if ($(window).scrollTop() >= statics.top) {
+  		// 		$('.count').each(function () {
+				//     $(this).prop('Counter',0).animate({
+				//         Counter: $(this).text()
+				//     }, {
+				//         duration: 2000,
+				//         easing: 'swing',
+				//         step: function (now) {
+				//             $(this).text(Math.ceil(now));
+				//         }
+				//     });
+				// });
+  		// 	}
+  		if ($(window).scrollTop() >= statics.top) {
+	  		$('.count').each(function() {
+			  var $this = $(this),
+				      countTo = $this.attr('data-count');
+				  
+				  $({ countNum: $this.text()}).animate({
+				    countNum: countTo
+				  },
+
+				  {
+				    duration: 2000,
+				    easing:'swing',
+				    step: function() {
+				      $this.text(Math.floor(this.countNum));
+				    },
+				    complete: function() {
+				      $this.text(this.countNum);
+				      //alert('finished');
+				    }
+
+				  });
+			});
+  		}
+	})
+}
   </script>
   <script type="text/javascript" src="assets/js/myscript.js"></script>
 </body>
