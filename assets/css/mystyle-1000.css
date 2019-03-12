@@ -33,12 +33,12 @@
 	padding: 0 35vw;
 }
 
-.brief__section h1 {
+.element_hide-uno {
 	padding-top: 130px;
 	font-size: 2.8em;
 }
 
-.brief__section p {
+.element_hide-dos {
 	font-size: 1.3em;
 	line-height: 1.4em;
 }
@@ -202,6 +202,59 @@
 	bottom: 15px;
 	right: 0%;
 }
+
+
+}
+
+@media (min-width: 1100px) {
+
+.element_hide-uno {
+	padding-top: 130px;
+	font-size: 2.8em;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.element_hide-dos {
+	font-size: 1.3em;
+	line-height: 1.4em;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.ciclo__section {
+	padding: 0 20vw;
+	margin-bottom: 80px;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.socios {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.certificados {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.element_hide-tres {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.element_hide-show {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
 
 
 }

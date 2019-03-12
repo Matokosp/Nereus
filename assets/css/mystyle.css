@@ -112,7 +112,7 @@ h1, h2 {
 	padding: 0 12vw;
 }
 
-.brief__section h1 {
+.element_hide-uno {
 	padding-top: 270px;
 	text-transform: uppercase;
 	color: #fff;
@@ -123,7 +123,7 @@ h1, h2 {
 	font-weight: 600;
 }
 
-.brief__section p {
+.element_hide-dos {
 	color: #fff;
 	text-align: left;
 	font-size: 1.2em;
