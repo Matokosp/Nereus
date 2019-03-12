@@ -136,13 +136,24 @@
   transition: 0.5s;
 }
 
-.menu__full-list-link-black {
-  color: #414042;
+.menu__full-list-link-grey {
+  color: #818589;
 }
 
-.menu__full-list-link h4 {
+.menu-title {
   padding-left: 40px;
   margin: 8px 0; 
+  font-weight: 400;
+}
+
+.menu__full-list-link-select {
+  font-weight: 600;
+  color: #000;
+}
+
+.menu__full-list-link-select-black {
+  font-weight: 600;
+  color: #000;
 }
 
 }

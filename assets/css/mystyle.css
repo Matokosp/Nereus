@@ -12,6 +12,62 @@ h1, h2 {
 	margin:0;
 }
 
+.contact {
+	position: fixed;
+	bottom: 20px;
+	right: 10px;
+	text-align: right;
+	z-index: 99;
+}
+
+.contact h4 {
+	margin: 0;
+}
+
+.contact_block-top {
+	background-color: #232223;
+	color: #fff;
+	padding: 30px 20px;
+	border-radius: 15px 15px 0 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.contact_block-bottom {
+	background-color: #fff;
+	color: #414042;
+	margin-bottom: 20px;
+	padding: 30px 20px;
+	border-radius: 0 0 15px 15px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.contact_block-show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.contact_button {
+	background-color: #232223;
+	width: 30px;
+	height: 30px;
+	padding: 20px 15px 10px 15px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+}
+
+.contact_button img {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+
+
 .background__image-cons {
 	background-position: center center;
 	background-size: cover;
@@ -226,6 +282,10 @@ h1, h2 {
 	margin-top: 40px;
 }
 
+.product__section {
+	display: none;
+}
+
 .product__slide {
 	text-align: center;
 }
@@ -257,29 +317,39 @@ h1, h2 {
 .bottom__section  {
 	background-image: url(../images/bkg-7.jpg);
 	height: 700px;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
 }
 
 .bottom__section h2 {
 	text-align: left;
 	font-size: 2.5em;
 	color: #fff;
-	padding: 280px 12vw;
+	padding: 280px 12vw 0 12vw;
+	margin: 0;
 }
 
 .nereus__footer {
-	background-color: #3a3636;
-	padding: 10px 8vw;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	right: 0;
 }
 
 .nereus__footer img {
 	width: 100px;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
 }
 
-.nereus__footer i {
-	float: right;
-	padding-left: 10px;
-	color: #fff;
-	font-size: 2.8em;
+.nereus__footer span {
+	width: 180px;
+	font-size: 1.1em;
+	position: absolute;
+	color: white;
+	bottom: 15px;
+	right: 0px;
 }
-
 

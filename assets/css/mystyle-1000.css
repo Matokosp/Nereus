@@ -140,6 +140,33 @@
 	font-size: 1.4em;
 }
 
+.product__flexslider {
+	display: none;
+}
+
+.product__section {
+	display: block;
+	margin-top: 60px;
+	text-align: center;
+}
+
+.product__item {
+	text-align: center;
+	border: solid 1px #414042;
+	width: 22%;
+	padding: 20px 0;
+	display: inline-block;
+	margin: 0 1%;
+}
+
+.product__item h3 {
+	margin: 0;
+}
+
+.product__item img {
+	width: 100%;
+}
+
 .bottom__section  {
 	background-image: url(../images/bkg-7-1000.jpg);
 	height: 720px;
@@ -151,6 +178,22 @@
 	font-size: 2.9em;
 	color: #fff;
 	padding: 300px 30vw 0 30vw;
+}
+
+.nereus__footer img {
+	width: 120px;
+	position: absolute;
+	bottom: 15px;
+	left: 25px;
+}
+
+.nereus__footer span {
+	width: 40%;
+	font-size: 1.5em;
+	position: absolute;
+	color: white;
+	bottom: 15px;
+	right: 0%;
 }
 
 
