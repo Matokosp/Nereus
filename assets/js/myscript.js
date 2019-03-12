@@ -28,16 +28,15 @@
 		desplazar();
 		e.stopPropagation();
 		menuHideShow = $('.nav-menu-res').children(".menu-hide").hasClass('show');
-		$('.menuicon').toggleClass('menuicon--black');
+		$('.menuicon').addClass('menuicon--black');
 		console.log(menuHideShow)
 	})
    
 	window.addEventListener('click', function(e){
-		// var menuHide = $('.menu-hide');
-		if (menuHideShow === true && e.target.className != 'menu-hide show') {
+		if (menuHideShow = true && e.target.className != 'menu-hide show') {
 			$('.menu-hide').removeClass('show');
 			$('#hamburger').removeClass('hamburguer-slide');
-			// desplazar();
+			$('.menuicon').removeClass('menuicon--black');
 			e.stopPropagation();		
 		}
 		console.log(e.target)
@@ -74,7 +73,6 @@
 			// if ($(window).scrollTop() >= section4.top) {
 			// 	$('.menuicon').removeClass('menuicon--black');
 			// }
-
 		})
 	}
 
