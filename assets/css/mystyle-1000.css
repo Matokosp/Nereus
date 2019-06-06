@@ -1,4 +1,4 @@
-@charset "UTF-8"; 
+@charset "UTF-8";
 
 @media (min-width: 950px) {
 
@@ -31,16 +31,6 @@
 	background-image: url(../images/bkg-2-1000.jpg);
 	height: 580px;
 	padding: 0 35vw;
-}
-
-.element_hide-uno {
-	padding-top: 130px;
-	font-size: 2.8em;
-}
-
-.element_hide-dos {
-	font-size: 1.3em;
-	line-height: 1.4em;
 }
 
 .brief__section-bottom {
@@ -209,16 +199,12 @@
 @media (min-width: 1100px) {
 
 .element_hide-uno {
-	padding-top: 130px;
-	font-size: 2.8em;
 	transform: translateY(100px);
 	opacity: 0;
 	transition: 0.8s;
 }
 
 .element_hide-dos {
-	font-size: 1.3em;
-	line-height: 1.4em;
 	transform: translateY(100px);
 	opacity: 0;
 	transition: 0.8s;

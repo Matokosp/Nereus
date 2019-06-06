@@ -12,6 +12,20 @@ h1, h2 {
 	margin:0;
 }
 
+/* CLASES PARA ANIMAR APARICIONES A MEDIDA QUE SE HACE SCROLL */
+.element_hide{
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.element_hide-show {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+/* CONTACTO FIXED */
+
 .contact {
 	position: fixed;
 	bottom: 20px;
@@ -68,14 +82,14 @@ h1, h2 {
 	text-align: center;
 }
 
-
-
+/* CONSTANTE PARA BACKGROUND IMAGES DE SECCIONES */
 .background__image-cons {
 	background-position: center center;
 	background-size: cover;
 	text-align: center;
 }
 
+/* SECCION HEADER */
 .header {
 	background-image: url(../images/bkg-1.jpg);
 	height: 700px;
@@ -85,7 +99,7 @@ h1, h2 {
 	display: block;
 	margin:0 auto;
 	width: 80%;
-	padding-top: 300px;
+	padding-top: 35vh;
 }
 
 .header__category {
@@ -106,42 +120,105 @@ h1, h2 {
 	margin: 30px 20px 0 20px;
 }
 
+.header__paragraph {
+	color: #fff;
+	margin-top: 50px;
+}
+
+/* SECCION DEL BRIEF DE LA EMPRESA */
 .brief__section {
 	background-image: url(../images/bkg-2.jpg);
 	height: 700px;
 	padding: 0 12vw;
 }
 
-.element_hide-uno {
-	padding-top: 270px;
-	text-transform: uppercase;
+.brief__paragraph {
+	padding-top: 40vh;
+	margin: 0;
 	color: #fff;
-	text-align: left;
-	display: block;
-	margin: 0 auto;
-	font-size: 2.5em;
-	font-weight: 600;
-}
-
-.element_hide-dos {
-	color: #fff;
-	text-align: left;
-	font-size: 1.2em;
-	line-height: 1.3em;
+	font-size: 1rem;
+	font-weight: 300;
 }
 
 .brief__line {
 	width: 130px;
-	height: 4px;
+	height: 3px;
 	border-radius: 50px;
 	background-color: #fff;
 	margin: 20px auto 0 auto;
 }
 
 .brief__section-bottom {
-	background-image: url(../images/bkg-3.jpg);
-	height: 80px;
+	display: none;
 }
+
+/* SECTION SPONSORS */
+
+.sponsors__section {
+	padding: 5vh 12vw;
+}
+
+.sponsors__text {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+.section__underline-black {
+	width: 130px;
+    height: 3px;
+    border-radius: 50px;
+    margin: 20px auto 0 auto;
+	background-color: #2e2d2c;
+}
+
+.sponsors__flex {
+	display: flex
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 5vh 0;
+}
+
+.sponsors__flex_item {
+	width: 70%;
+	margin: 10px 0;
+}
+
+/* SECCION CON ESTADISTICAS Y COUNTER */
+.statistics__section {
+	background-image: url(../images/bkg-3.jpg);
+	padding: 15vh 5vw;
+	color: #fff;
+}
+
+.section__underline-white {
+	width: 130px;
+    height: 3px;
+    border-radius: 50px;
+    margin: 20px auto 0 auto;
+	background-color: #fff;
+}
+
+.statistics__section-block {
+	margin-bottom: 40px;
+}
+
+.country_item {
+	display: inline-block;
+	margin: 0 2%;
+}
+
+.country_item h2 {
+	color: #fff;
+	font-size: 1.8em;
+}
+
+.country_item h4 {
+	color: #fff;
+}
+
 
 .ciclo__section {
 	padding: 0 10px;
@@ -151,48 +228,6 @@ h1, h2 {
 .ciclo__section img {
 	width: 100%;
 }
-
-.statistics__section {
-	background-image: url(../images/bkg-4.jpg);
-	height: 350px;
-	padding: 30px 5vw 0 5vw;
-}
-
-.statistics__section-block {
-	margin-bottom: 40px;
-}
-
-.statistics__section-block-separation {
-	display: none;
-}
-
-.statistics__section-block p {
-	color: #60605d;
-}
-
-.country_item {
-	display: inline-block;
-	margin: 0 2%;
-}
-
-.country_item h2 {
-	color: #60605d;
-	font-size: 1.8em;
-}
-
-.country_item h4 {
-	color: #60605d;
-}
-
-/*.country_item p {
-	color: #60605d;
-	font-size: 1.4em;
-	display: inline-block;
-	width: 40%;
-	vertical-align: top;
-	margin-top: 10px;
-}*/
-
 
 .marcas__section {
 	background-image: url(../images/bkg-5.jpg);
@@ -354,4 +389,3 @@ h1, h2 {
 	bottom: 15px;
 	right: 0px;
 }
-

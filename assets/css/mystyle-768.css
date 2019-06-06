@@ -3,7 +3,7 @@
 @media (min-width: 768px) {
 
 .header {
-	background-image: url(../images/bkg-1-768.jpg);
+	background-image: url(../images/bkg-1.jpg);
 	height: 600px;
 }
 
@@ -24,10 +24,6 @@
 	background-image: url(../images/bkg-2-768.jpg);
 	height: 370px;
 	padding: 0 30vw;
-}
-
-.element_hide-uno {
-	padding-top: 20px;
 }
 
 .brief__section-bottom {

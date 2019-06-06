@@ -18,9 +18,7 @@
 
 	<!-- MY STYLE -->
     <link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/mystyle-768.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/mystyle-1000.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/mystyle-1440.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="assets/css/menu.css">
 
     <!-- FAVICONS -->
@@ -36,7 +34,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="contact">
+	<section class="contact">
 		<div class="contact_block-top">
 			<h4>¿Quieres saber más de nosotros? <br>
 			Escríbenos o llámanos</h4>
@@ -48,21 +46,22 @@
 		<div class="contact_button">
 			<img src="assets/images/contact-icon.png">
 		</div>
-	</div>
+	</section>
 	<header class="background__image-cons header">
-		<img class="header__logo" src="assets/images/nereus-icon.png">
-		<div class="header__category">
+		<h1><img class="header__logo" src="assets/images/nereus-icon.png" alt="Nereus logo"></h1>
+		<article class="header__category">
 			<img class="header__icon" src="assets/images/agua-icon.png">
 			<p>Agua</p>
-		</div>
-		<div class="header__category">
+		</article>
+		<article class="header__category">
 			<img class="header__icon" src="assets/images/climatizacion-icon.png">
-			<p>Climatización</p>			
-		</div>
-		<div class="header__category">
+			<p>Climatización</p>
+		</article>
+		<article class="header__category">
 			<img class="header__icon" src="assets/images/industrial-icon.png">
-			<p>Industrial</p>			
-		</div>
+			<p>Industrial</p>
+		</article>
+		<p class="header__paragraph">Responsables con los clientes, consumidores de agua y&nbsp;el&nbsp;medioambiente</p>
 	</header>
 	<nav class="nav-menu-res" id="navbar">
 		<div class="menures-block">
@@ -72,7 +71,7 @@
 		        </a>
 		        <ul class="menures">
 		            <li><span></span><a href="#"><h4>Nosotros</h4></a></li>
-		            <li><span></span><a href="#estadisticas"><h4>Estadísticas</h4></a></li>        
+		            <li><span></span><a href="#estadisticas"><h4>Estadísticas</h4></a></li>
 		            <li><span></span><a href="#partners"><h4>Partners</h4></a></li>
 		            <li><span></span><a href="#productos"><h4>Productos</h4></a></li>
 		            <li><span></span><a href="#contacto"><h4>Contacto</h4></a></li>
@@ -89,7 +88,7 @@
 	    		<img class="menu__full-list-img-white" src="assets/images/nereus-logo-3dots.png">
 	    		<img class="menu__full-list-img-black" src="assets/images/nereus-menu.png">
 		    	<li><span></span><a class="menu__full-list-link" href="#"><h4 class="menu-title">Nosotros</h4></a></li>
-	            <li><span></span><a class="menu__full-list-link" href="#estadisticas"><h4 class="menu-title">Estadísticas</h4></a></li>        
+	            <li><span></span><a class="menu__full-list-link" href="#estadisticas"><h4 class="menu-title">Estadísticas</h4></a></li>
 	            <li><span></span><a class="menu__full-list-link" href="#partners"><h4 class="menu-title">Partners</h4></a></li>
 	            <li><span></span><a class="menu__full-list-link" href="#productos"><h4 class="menu-title">Productos</h4></a></li>
 	            <li><span></span><a class="menu__full-list-link" href="#contacto"><h4 class="menu-title">Contacto</h4></a></li>
@@ -97,61 +96,75 @@
 	    </div>
 	</nav>
 	<section class="background__image-cons brief__section" id="nosotros">
-		<h1 class="element_hide-uno">responsabilidad <br> con tus clientes y <br> el&nbsp;medioambiente</h1>
-		<p  class="element_hide-dos">NEREUS es una empresa innovadora que se posiciona como el nexo entre empresas sanitarias y sus clientes. Surge a partir de la necesidad deentregar con transparencia  el consumo de agua potable y aguas servidas de todos los clientes, sean éstos industriales, comerciales, públicos o&nbsp;particulares.</p>	
-		<div class="brief__line"></div>
+		<h3 class="brief__paragraph element_hide" id="briefParagraph">En NEREUS te orientamos hacia una solución robusta, eficiente y con tecnología de última generación para la medición de agua fría, agua caliente, aguas servidas y todo tipo de líquidos y&nbsp;fluidos</h3>
+		<div class="brief__line element_hide" id="briefLine"></div>
 	</section>
-	<div class="background__image-cons brief__section-bottom"></div>
-	<div id="statics"></div>
+	<section class="sponsors__section">
+		<h3 class="sponsors__text">Contamos con el respaldo de un Grupo de Empresas líderes a nivel mundial y con las más reconocidas marcas internacionales</h3>
+		<div class="section__underline-black"></div>
+		<section class="sponsors__flex">
+			<img class="sponsors__flex_item" src="assets/images/sponsor-1.png" alt="">
+			<img class="sponsors__flex_item" src="assets/images/sponsor-2.png" alt="">
+			<img class="sponsors__flex_item" src="assets/images/sponsor-3.png" alt="">
+			<img class="sponsors__flex_item" src="assets/images/sponsor-4.png" alt="">
+			<img class="sponsors__flex_item" src="assets/images/sponsor-5.png" alt="">
+			<img class="sponsors__flex_item" src="assets/images/sponsor-6.png" alt="">
+		</section>
+	</section>
+	<section class="background__image-cons statistics__section" id="statics">
+		<h3>Porque tenemos conciencia de la sequía, la escasez de agua y del cambio climático, nos preocupamos de que cada gota de agua se mida correctamente </h3>
+		<div class="section__underline-white"></div>
+		<section class="statics_one_section">
+			<h5>Promedio consumo de agua en litros por día y persona</h5>
+			<div class="statistics__section-block">
+				<div class="country_item">
+					<h2><span class="count" data-count="120">0</span> %</h2>
+					<h4>Alemania</h4>
+				</div>
+				<div class="country_item">
+					<h2><span class="count" data-count="200">0</span> %</h2>
+					<h4>Chile</h4>
+				</div>
+				<div class="country_item">
+					<h2><span class="count" data-count="300">0</span> %</h2>
+					<h4>USA</h4>
+				</div>
+			</div>
+		</section>
+		<section class="statics_one_section">
+			<h5>% de nivel de pérdida de agua en las redes</h5>
+			<div class="statistics__section-block">
+				<div class="country_item">
+					<h2><span class="count" data-count="6">0</span> %</h2>
+					<h4>Japón</h4>
+				</div>
+				<div class="country_item">
+					<h2><span class="count" data-count="10">0</span> %</h2>
+					<h4>Alemania</h4>
+				</div>
+				<div class="country_item">
+					<h2><span class="count" data-count="15">0</span> %</h2>
+					<h4>Australia</h4>
+				</div>
+				<div class="country_item">
+					<h2><span class="count" data-count="35">0</span> %</h2>
+					<h4>Chile</h4>
+				</div>
+				<div class="country_item">
+					<h2><span class="count" data-count="40">0</span> %</h2>
+					<h4>Brasil</h4>
+				</div>
+			</div>
+		</section>
+	</section>
 	<section class="ciclo__section">
 		<img src="assets/images/ciclo-img.jpg">
-	</section>
-	<section class="background__image-cons statistics__section" id="estadisticas">
-		<div class="statistics__section-block">
-			<div class="country_item">
-				<h2><span class="count" data-count="120">0</span> LT</h2>
-				<h4>Alemania</h4>
-			</div>
-			<div class="country_item">
-				<h2><span class="count" data-count="200">0</span> LT</h2>
-				<h4>Chile</h4>
-			</div>
-			<div class="country_item">
-				<h2><span class="count" data-count="300">0</span> LT</h2>
-				<h4>USA</h4>
-			</div>
-			<p>Promedio consumo de agua por día y persona</p>
-		</div>
-		<div class="statistics__section-block-separation"></div>
-		<div class="statistics__section-block">
-			<div class="country_item">
-				<h2><span class="count" data-count="6">0</span> %</h2>
-				<h4>Japón</h4>
-			</div>
-			<div class="country_item">
-				<h2><span class="count" data-count="10">0</span> %</h2>
-				<h4>Alemania</h4>
-			</div>
-			<div class="country_item">
-				<h2><span class="count" data-count="15">0</span> %</h2>
-				<h4>Australia</h4>
-			</div>
-			<div class="country_item">
-				<h2><span class="count" data-count="35">0</span> %</h2>
-				<h4>Chile</h4>
-			</div>
-			<div class="country_item">
-				<h2><span class="count" data-count="40">0</span> %</h2>
-				<h4>Brasil</h4>
-			</div>
-			<p>% de nivel de pérdida de agua en las redes</p>
-		</div>
 	</section>
 	<section class="background__image-cons marcas__section" id="partners">
 		<div class="socios">
 			<h2 class="marcas__titles">Nuestros Socios</h2>
 			<div class="title__underline"></div>
-			<div class="socios__imgs">	
+			<div class="socios__imgs">
 				<img class="socios__marca-icon" src="assets/images/maddalena.png">
 				<img class="socios__marca-icon" src="assets/images/badgermeter.png">
 				<img class="socios__marca-icon--circular" src="assets/images/nwm.png">
@@ -231,10 +244,10 @@
 	</section>
 	<div id="bottom"></div>
 	<section class="bottom__section background__image-cons" id="contacto">
-		<h2 class="element_hide-tres">¿QUIERES SABER 
-			MÁS DE NOSOTROS 
-			Y HACERTE PARTE 
-			DE UN MUNDO 
+		<h2 class="element_hide-tres">¿QUIERES SABER
+			MÁS DE NOSOTROS
+			Y HACERTE PARTE
+			DE UN MUNDO
 			MÁS CONCIENTE?</h2>
 		<div class="nereus__footer">
 			<img src="assets/images/nereus-logo-3dots.png">
@@ -263,32 +276,7 @@
   <!-- COUNTER -->
   <script type="text/javascript">
 
-  	var statics = $('#statics').offset();
-  	const mq = window.matchMedia( "(min-width: 1000px)" );
-  	// if (mq.matches) {
-  		$(window).scroll(function(){
-	  		if ($(window).scrollTop() >= statics.top - 100) {
-		  		$('.count').each(function() {
-				  var $this = $(this),
-					      countTo = $this.attr('data-count');					  
-					  $({ countNum: $this.text()}).animate({
-					    countNum: countTo
-					  },
-					  {
-					    duration: 2000,
-					    easing:'swing',
-					    step: function() {
-					      $this.text(Math.floor(this.countNum));
-					    },
-					    complete: function() {
-					      $this.text(this.countNum);
-					      //alert('finished');
-					    }
-					  });
-				});
-	  		}
-	})
-// }
+
   </script>
   <script type="text/javascript" src="assets/js/myscript.js"></script>
 </body>
