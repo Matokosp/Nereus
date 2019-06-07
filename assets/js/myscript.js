@@ -47,7 +47,6 @@ const mq = window.matchMedia( "(min-width: 1000px)" );
 })
 // }
 
-
 // MENU
 
 	// Sticky

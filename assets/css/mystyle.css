@@ -219,82 +219,80 @@ h1, h2 {
 	color: #fff;
 }
 
+/* SECTION CICLO IMAGEN */
 
 .ciclo__section {
-	padding: 0 10px;
+	padding: 5vh 10px;
 	margin-bottom: 20px;
+	text-align: center;
 }
 
-.ciclo__section img {
+.ciclo__img {
 	width: 100%;
 }
 
-.marcas__section {
-	background-image: url(../images/bkg-5.jpg);
-	height: 660px;
+.ciclo__iconography {
+	width: 70%;
+	margin-top: 20px;
 }
 
-.socios {
-	padding-top: 30px;
+/* RUBROS SECTION */
+
+.rubro__section {
+	padding: 5vh 0;
+	text-align: center;
 }
 
-.marcas__titles {
-	font-weight: 500;
+.rubro__title {
+
+}
+
+.rubro__flex {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.rubro__item {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 	color: #fff;
-	font-size: 2em;
+	width: 100%;
+  height: 0;
+  padding-bottom: 100%;
 }
 
-.title__underline {
-	width: 150px;
-	height: 4px;
-	border-radius: 50px;
-	background-color: #fff;
-	margin: 3px auto 0 auto;
+.rubro__item-agua {
+	background-image: url('../images/rubro-agua.jpg');
 }
 
-.socios__imgs {
-	padding-top: 30px;
+.rubro__item-climatizacion {
+	background-image: url('../images/rubro-climatizacion.jpg');
 }
 
-.socios__marca-icon {
-	display: block;
-	margin: 0 auto;
-	width: 270px;
-	margin-top: 15px;
+.rubro__item-industrial {
+	background-image: url('../images/rubro-industrial.jpg');
 }
 
-.socios__marca-icon--circular {
-	display: block;
-	margin: 0 auto;
-	width: 80px;
-	margin-top: 15px;
+.rubro__item_icon {
+	padding-top: 20%;
+	width: 20%;
 }
 
-.certificados {
-	margin-top: 50px;
+.rubro__item_title {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	margin: 2px;
 }
 
-.certificacion__icons-section {
-	margin-top: 30px;
+.rubro__item_text {
+	padding: 0 15%;
+	margin-top: 10%;
+	font-size: 1rem;
 }
 
-.certificacion__icon {
-	display: inline-block;
-	width: 70px;
-	margin:0 10px;
-}
-
-.certificacion__icon--break {
-	display: block;
-	margin: 0 auto;
-	width: 80px;
-	margin-top: 10px;
-}
-
-.marcas__section-bottom {
-	background-image: url(../images/bkg-6.jpg);
-	height: 80px;
-}
+/* PRODUCTOS SECTION */
 
 .category__section {
 	margin-top: 30px;
@@ -325,6 +323,7 @@ h1, h2 {
 
 .product__slide {
 	text-align: center;
+	width: 33%;
 }
 
 .product__slide h3 {
