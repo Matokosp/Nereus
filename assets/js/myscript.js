@@ -59,7 +59,6 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 		desplazar();
 		e.stopPropagation();
 		menuHideShow = $('.nav-menu-res').children(".menu-hide").hasClass('show');
-		$('.menuicon').addClass('menuicon--black');
 		console.log(menuHideShow)
 	})
 
@@ -67,7 +66,6 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 		if (menuHideShow = true && e.target.className != 'menu-hide show') {
 			$('.menu-hide').removeClass('show');
 			$('#hamburger').removeClass('hamburguer-slide');
-			$('.menuicon').removeClass('menuicon--black');
 			e.stopPropagation();
 		}
 		console.log(e.target)
@@ -153,7 +151,7 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 					$('#partnersFlex').removeClass('element_hide-show');
 				}
 
-				if ($(window).scrollTop() + 200 >= certificadosSection.top ) {
+				if ($(window).scrollTop()  >= certificadosSection.top ) {
 					$('#certificadosFlex').addClass('element_hide-show');
 				} else {
 					$('#certificadosFlex').removeClass('element_hide-show');

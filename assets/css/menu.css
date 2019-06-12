@@ -7,30 +7,19 @@
   position: absolute;
 }
 
-.menu_full {
-  display: none;
-}
-
 .menu-hide{
-  width: 200px;
-  left: -205px;
-  height: 100vh;
+  left: -100px;
   position: fixed;
   top: 0px;
   transition: all .5s ease-in-out;
   text-align: center;
   z-index: 50;
-  padding-top: 100px;
-  background-color: #fff;
+  padding-top: 5vh;
 }
 
 .show{
-  left: 0px;
+  left: 20px;
   transition: all .5s ease-in-out;
-}
-
-.menures__logo {
-  width: 70%;
 }
 
 .hamburger_div {
@@ -73,21 +62,18 @@
 
 .menures {
   text-align: left;
-  margin-top: 70px;
+  padding: 0;
 }
 
 .menures li {
   list-style-type: none;
-  margin-left: 5%;
   position: relative;
 }
 
 .menures a {
+  color: #fff;
   text-decoration: none;
-  color: #000;
-  margin: 2px 0;
   display: inline-block;
-  margin-left: 5px;
   transition: 0.5s;
 }
 

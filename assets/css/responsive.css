@@ -245,7 +245,7 @@
 	.brief__section {
 		background-image: url(../images/bkg-2-1700.jpg);
 		padding: 0 35vw;
-		height: 95vh;
+		height: 1024px;
 	}
 
 	.brief__paragraph {
@@ -271,12 +271,12 @@
 
 	.statistics__section {
 		background-image: url(../images/bkg-3-1700.jpg);
-		padding: 35vh 0vw;
+		height: 990px;
 	}
 
 	.statistics__title {
+		padding: 20% 30% 0 30%;
 		font-size: 1.2rem;
-		padding: 0 30%;
 	}
 
 	.statics_one_section {
@@ -368,11 +368,11 @@
 
 	.certificados__section {
 		background-image: url('../images/bkg-4-1700.jpg');
-		padding: 35vh 12vw;
+		height: 1200px;
 	}
 
 	.certificados__title {
-		padding: 0 35%;
+		padding: 35% 35% 0 35%;
 		font-size: 1.2rem;
 	}
 
@@ -457,7 +457,6 @@
 
 	.statistics__section {
 		background-image: url(../images/bkg-3-1700.jpg);
-		padding: 47vh 0vw;
 	}
 
 	.statistics__title {
@@ -490,7 +489,6 @@
 
 	.certificados__section {
 		background-image: url('../images/bkg-4-1700.jpg');
-		padding: 44vh 12vw;
 	}
 
 	.certificados__quote {
