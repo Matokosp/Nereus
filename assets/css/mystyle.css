@@ -14,9 +14,9 @@ h1, h2 {
 
 /* CLASES PARA ANIMAR APARICIONES A MEDIDA QUE SE HACE SCROLL */
 .element_hide{
-	transform: translateY(100px);
+	transform: translateY(40px);
 	opacity: 0;
-	transition: 0.8s;
+	transition: 0.6s;
 }
 
 .element_hide-show {
@@ -47,6 +47,7 @@ h1, h2 {
 	opacity: 0;
 	transition: 0.8s;
 	text-align: left;
+	display: none;
 }
 
 .contact_block-bottom {
@@ -59,9 +60,11 @@ h1, h2 {
 	opacity: 0;
 	transition: 0.8s;
 	text-align: left;
+	display: none;
 }
 
 .contact_block-show {
+	display: block;
 	visibility: visible;
 	opacity: 1;
 }
@@ -232,7 +235,7 @@ h1, h2 {
 }
 
 .ciclo__iconography {
-	width: 70%;
+	width: 270px;
 	margin-top: 20px;
 }
 
@@ -241,10 +244,6 @@ h1, h2 {
 .rubro__section {
 	padding: 5vh 0;
 	text-align: center;
-}
-
-.rubro__title {
-
 }
 
 .rubro__flex {
@@ -299,9 +298,14 @@ h1, h2 {
 	padding: 0 10vw;
 }
 
+.categoria {
+	margin-bottom: 100px;
+}
+
 .categoria__header {
 	text-align: center;
 	padding: 0 15vw;
+	margin-bottom: 20px;
 }
 
 .categoria__header img {
@@ -313,78 +317,160 @@ h1, h2 {
 	text-align: left;
 }
 
-.product__flexslider {
-	margin-top: 40px;
-}
-
-.product__section {
-	display: none;
-}
-
 .product__slide {
 	text-align: center;
-	width: 33%;
 }
 
-.product__slide h3 {
-	font-size: 2.3em;
-	padding-bottom: 4px;
-	border-bottom: 3px solid #3e6f8c;
-	width: 90px;
+.product__slide-subtitle {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+
+.product__slide-title {
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin: 0px;
+	color: #3C3C3B;
+	margin-bottom: 5px;
+}
+
+.product__slide-division {
+	width: 50%;
+	height: 5px;
+	border-radius: 20px;
 	margin: 0 auto;
-	color: #434041;
 }
 
-.product__slide p {
-	font-size: 1.3em;
-	margin-bottom: 8px;
+.frio {
+	background-color: #0909B7;
+}
+
+.caliente {
+	background-color: #F40C0C;
+}
+
+.liquido-industrial {
+	background-color: #1184B7;
+}
+
+.agua-servida {
+	background-color: #36926C;
+}
+
+.product__slide-img {
+	width: 100%;
+}
+
+.product__slide-brand-icon {
+	width: 50px;
+	display: block;
+	margin: 0 auto;
 }
 
 .product__ficha {
 	text-transform: uppercase;
 	background-color: #3e6f8c;
 	border: none;
+	margin-top: 30px;
 	padding: 10px 15px;
 	border-radius: 50px;
 	font-weight: 900;
 	color: #fff;
 }
 
-.bottom__section  {
-	background-image: url(../images/bkg-7.jpg);
-	height: 700px;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
+
+/* PARTNERS SECTION */
+
+.partners__section {
+	text-align: center;
+	padding: 5vh 12vw;
 }
 
-.bottom__section h2 {
-	text-align: left;
-	font-size: 2.5em;
-	color: #fff;
-	padding: 280px 12vw 0 12vw;
-	margin: 0;
+.partners__title {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	text-align: center;
 }
+
+.partners__flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.partners__item-img {
+	width: 170px;
+	margin: 5px 0;
+}
+
+/* CERTIFICADOS SECTION */
+
+.certificados__section {
+	background-image: url('../images/bkg-4.jpg');
+	padding: 10vh 12vw;
+}
+
+.certificados__title {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.certificados__quote {
+	color: #fff;
+	margin-top: 10px;
+	font-size: 0.6rem;
+}
+
+.certificados__flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.certificados__flex-item {
+	width: 60%;
+	margin: 15px 0;
+}
+
+/* CONTACT SECTION */
+
+.contact__section {
+	text-align: center;
+	padding: 10vh 12vw;
+}
+
+.contact__list {
+	list-style: none;
+	padding: 0;
+}
+
+.contact__list li {
+	margin: 5px 0;
+}
+
+/* FOOTER */
 
 .nereus__footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	right: 0;
+	background-color: #343434;
+	padding: 50px 5vw;
 }
 
-.nereus__footer img {
-	width: 100px;
-	position: absolute;
-	bottom: 15px;
-	left: 15px;
+.footer__img {
+	width: 30%;
+	display: block;
+	margin: 0 auto;
 }
 
-.nereus__footer span {
-	width: 180px;
-	font-size: 1.1em;
-	position: absolute;
-	color: white;
-	bottom: 15px;
-	right: 0px;
+.footer__span {
+	color: #fff;
+	display: block;
+	margin: 20px auto 0 auto;
+	text-align: center;
 }

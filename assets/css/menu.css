@@ -91,7 +91,7 @@
   transition: 0.5s;
 }
 
-.active {
+.menu_active {
   height: 1em;
   background-color: #fff;
   width: 2px;
@@ -142,7 +142,7 @@
 
 .menu-title {
   padding-left: 40px;
-  margin: 8px 0; 
+  margin: 8px 0;
   font-weight: 400;
 }
 
