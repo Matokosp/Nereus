@@ -84,26 +84,15 @@
 	       		<div class="menuicon"></div>
 	    	</div>
 	    </div>
-	    <div class="menu_full">
-	    	<ul class="menu__full-list">
-	    		<img class="menu__full-list-img-white" src="assets/images/nereus-logo-3dots.png">
-	    		<img class="menu__full-list-img-black" src="assets/images/nereus-menu.png">
-		    	<li><span></span><a class="menu__full-list-link" href="#"><h4 class="menu-title">Nosotros</h4></a></li>
-	            <li><span></span><a class="menu__full-list-link" href="#estadisticas"><h4 class="menu-title">Estadísticas</h4></a></li>
-	            <li><span></span><a class="menu__full-list-link" href="#partners"><h4 class="menu-title">Partners</h4></a></li>
-	            <li><span></span><a class="menu__full-list-link" href="#productos"><h4 class="menu-title">Productos</h4></a></li>
-	            <li><span></span><a class="menu__full-list-link" href="#contacto"><h4 class="menu-title">Contacto</h4></a></li>
-            </ul>
-	    </div>
 	</nav>
-	<section class="background__image-cons brief__section" id="nosotros">
+	<section class="background__image-cons brief__section" id="brief">
 		<h3 class="brief__paragraph element_hide" id="briefParagraph">En NEREUS te orientamos hacia una solución robusta, eficiente y con tecnología de última generación para la medición de agua fría, agua caliente, aguas servidas y todo tipo de líquidos y&nbsp;fluidos</h3>
 		<div class="brief__line element_hide" id="briefLine"></div>
 	</section>
-	<section class="sponsors__section">
+	<section class="sponsors__section" id="sponsors">
 		<h3 class="sponsors__text">Contamos con el respaldo de un Grupo de Empresas líderes a nivel mundial y con las más reconocidas marcas internacionales</h3>
 		<div class="section__underline-black"></div>
-		<section class="sponsors__flex">
+		<section class="sponsors__flex element_hide" id="sponsorsFlex">
 			<img class="sponsors__flex_item" src="assets/images/sponsor-1.png" alt="">
 			<img class="sponsors__flex_item" src="assets/images/sponsor-2.png" alt="">
 			<img class="sponsors__flex_item" src="assets/images/sponsor-3.png" alt="">
@@ -158,9 +147,9 @@
 			</div>
 		</section>
 	</section>
-	<section class="ciclo__section">
-		<img class="ciclo__img" src="assets/images/ciclo-img.jpg" alt="Imagen del ciclo del agua e intervencion nereus">
-		<img class="ciclo__iconography" src="assets/images/iconography.png" alt="iconografia para imagen del ciclo">
+	<section class="ciclo__section" id="ciclo">
+		<img class="ciclo__img element_hide" id="cicloGraphic" src="assets/images/ciclo-img.jpg" alt="Imagen del ciclo del agua e intervencion nereus">
+		<img class="ciclo__iconography element_hide" id="cicloIcons" src="assets/images/iconography.png" alt="iconografia para imagen del ciclo">
 	</section>
 	<section class="rubro__section">
 		<h3 class="rubro__title">Somos expertos en los siguientes rubros:</h3>
@@ -183,7 +172,7 @@
 			</article>
 		</section>
 	</section>
-	<section class="category__section" id="medidores_agua">
+	<section class="category__section">
 		<section class="categoria">
 			<div class="categoria__header">
 				<img src="assets/images/nereus-agua-icon.png" alt="Productos Nereus categoria Agua">
@@ -278,10 +267,10 @@
 			</div>
 		</section>
 	</section>
-	<section class="partners__section">
+	<section class="partners__section" id="partners">
 		<h3 class="partners__title">Nuestros productos son compatibles con diferentes sistemas de telemedición y telemetría</h3>
 		<div class="section__underline-black"></div>
-		<div class="partners__flex">
+		<div class="partners__flex element_hide" id="partnersFlex">
 			<img class="partners__item-img" src="assets/images/lora-icon.png" alt="">
 			<img class="partners__item-img" src="assets/images/sigfox-icon.png" alt="">
 			<img class="partners__item-img" src="assets/images/mbus-icon.png" alt="">
@@ -289,11 +278,11 @@
 		</div>
 		<img class="ciclo__iconography" src="assets/images/iconography.png">
 	</section>
-	<section class="certificados__section background__image-cons">
+	<section class="certificados__section background__image-cons" id="certificados">
 		<h3 class="certificados__title">Nuestros productos y soluciones para la medición de agua potable están certificados bajo las normas MID en Europa y en Chile en Dictuc bajo la Norma&nbsp;NCh&nbsp;3274/1.</h3>
 		<div class="section__underline-white"></div>
 		<p class="certificados__quote">*Otros certificados de los productos de origen europeo</p>
-		<section class="certificados__flex">
+		<section class="certificados__flex element_hide" id="certificadosFlex">
 			<img class="certificados__flex-item" src="assets/images/eurofins-icon.png" alt="">
 			<img class="certificados__flex-item" src="assets/images/wras-icon.png" alt="">
 			<img class="certificados__flex-item" src="assets/images/czech-icon.png" alt="">
@@ -340,20 +329,6 @@
 			}
 		})
 	</script>
-
-  <!-- FlexSlider -->
-  <script defer src="assets/js/jquery.flexslider.js"></script>
-
-  <script type="text/javascript">
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
 
   <script type="text/javascript" src="assets/js/myscript.js"></script>
 </body>
