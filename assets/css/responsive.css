@@ -337,7 +337,7 @@
 
 	.category__section {
 		margin-top: 0px;
-		padding: 10vh 10vw;
+		padding: 10vh 20vw;
 	}
 
 	.categoria__header {
@@ -363,6 +363,8 @@
 		width: 15%;
 		margin: 20px;
 	}
+
+
 
 	/* CERTIFICADOS SECTION */
 
@@ -478,7 +480,7 @@
 
 	.category__section {
 		margin-top: 0px;
-		padding: 10vh 20vw;
+		padding: 10vh 25vw;
 	}
 
 	.categoria__header {
