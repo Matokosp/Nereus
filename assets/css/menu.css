@@ -8,13 +8,13 @@
 }
 
 .menu-hide{
-  left: -100px;
+  left: -210px;
   position: fixed;
   top: 0px;
   transition: all .5s ease-in-out;
   text-align: center;
   z-index: 50;
-  padding-top: 5vh;
+  padding-top: 6vh;
 }
 
 .show{
@@ -43,10 +43,6 @@
   padding-top: 50px;
 }
 
-.hamburguer-slide {
-  left: 150px;
-}
-
 .menuicon {
   background-color: #fff;
   height: 3px;
@@ -56,18 +52,35 @@
   float: right;
 }
 
+.menuicon_first {
+  transform: rotate(45deg) translateX(1px) translateY(-5px);
+  transform-origin: top left;
+}
+
+.menuicon_second {
+  opacity: 0;
+}
+
+.menuicon_third {
+  transform: rotate(-45deg) translateX(1px) translateY(5px);
+  transform-origin: bottom left;
+}
+
 .menuicon--black {
   background-color: #000;
 }
 
 .menures {
   text-align: left;
-  padding: 0;
+  padding: 20px;
+  background-color: rgba(0,0,0, 0.8);
+  border-radius: 20px;
 }
 
 .menures li {
   list-style-type: none;
   position: relative;
+  margin: 5px 0;
 }
 
 .menures a {
