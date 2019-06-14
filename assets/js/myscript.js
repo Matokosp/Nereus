@@ -68,6 +68,9 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 		if (menuHideShow = true && e.target.className != 'menu-hide show') {
 			$('.menu-hide').removeClass('show');
 			$('#hamburger').removeClass('hamburguer-slide');
+			$('#menuIconFirst').removeClass('menuicon_first');
+			$('#menuIconSecond').removeClass('menuicon_second');
+			$('#menuIconThird').removeClass('menuicon_third');
 			e.stopPropagation();
 		}
 		console.log(e.target)
@@ -195,6 +198,12 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 				$(menuIconFirst).addClass('menuicon--black');
 				$(menuIconSecond).addClass('menuicon--black');
 				$(menuIconThird).addClass('menuicon--black');
+			}
+
+			if ($(window).scrollTop() + 100 >= certificadosSection.top ) {
+				$(menuIconFirst).removeClass('menuicon--black');
+				$(menuIconSecond).removeClass('menuicon--black');
+				$(menuIconThird).removeClass('menuicon--black');
 			}
 
 
