@@ -434,6 +434,42 @@ h1, h2 {
 	color: #fff;
 }
 
+.categoria__simbologia {
+	margin-top: 40px;
+}
+
+.agua-fria_line {
+	display: inline-block;
+	width: 40px;
+	height: 3px;
+	background-color: #0909B7;
+	margin-right: 5px;
+}
+
+.agua-caliente_line {
+	display: inline-block;
+	width: 40px;
+	height: 3px;
+	background-color: #F40C0C;
+	margin-right: 5px;
+}
+
+.agua-industrial_line {
+	display: inline-block;
+	width: 40px;
+	height: 3px;
+	background-color: #1184B7;
+	margin-right: 5px;
+}
+
+.agua-servida_line {
+	display: inline-block;
+	width: 40px;
+	height: 3px;
+	background-color: #36926C;
+	margin-right: 5px;
+}
+
 
 /* PARTNERS SECTION */
 
