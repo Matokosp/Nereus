@@ -56,6 +56,7 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 		$('#menuIconFirst').toggleClass('menuicon_first');
 		$('#menuIconSecond').toggleClass('menuicon_second');
 		$('#menuIconThird').toggleClass('menuicon_third');
+		$('.menuicon').toggleClass('menuicon_white');
 	}
 	$('#hamburger').on('click', function(e){
 		desplazar();
@@ -71,6 +72,7 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 			$('#menuIconFirst').removeClass('menuicon_first');
 			$('#menuIconSecond').removeClass('menuicon_second');
 			$('#menuIconThird').removeClass('menuicon_third');
+			$('.menuicon').removeClass('menuicon_white');
 			e.stopPropagation();
 		}
 		console.log(e.target)
@@ -205,8 +207,6 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 				$(menuIconSecond).removeClass('menuicon--black');
 				$(menuIconThird).removeClass('menuicon--black');
 			}
-
-
 		})
 
 
@@ -216,3 +216,18 @@ const md = window.matchMedia( "(min-width: 1000px)" );
 		$('.contact_block-top').toggleClass('contact_block-show');
 		$('.contact_block-bottom').toggleClass('contact_block-show');
 	})
+
+
+	// WINDOW SCROLL NEXT SECTION CLICK
+
+	$('a[href*="#"]').on('click', function(e) {
+  e.preventDefault()
+
+  $('html, body').animate(
+    {
+      scrollTop: $($(this).attr('href')).offset().top,
+    },
+    500,
+    'linear'
+  )
+})

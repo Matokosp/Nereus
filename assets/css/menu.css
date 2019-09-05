@@ -8,18 +8,23 @@
 }
 
 .menu-hide{
-  left: -210px;
+  left: -290px;
   position: fixed;
   top: 0px;
   transition: all .5s ease-in-out;
   text-align: center;
   z-index: 50;
-  padding-top: 6vh;
+  background-color: rgba(0,0,0, 0.7);
 }
 
 .show{
-  left: 20px;
+  left: 0px;
   transition: all .5s ease-in-out;
+}
+
+.menu_logo {
+  width: 100px;
+  margin-top: 10vh;
 }
 
 .hamburger_div {
@@ -70,11 +75,16 @@
   background-color: #000;
 }
 
+.menuicon_white {
+  background-color: #fff;
+}
+
 .menures {
   text-align: left;
-  padding: 20px;
-  background-color: rgba(0,0,0, 0.8);
+  padding: 50px;
   border-radius: 20px;
+  height: 100vh;
+  margin: 0;
 }
 
 .menures li {
